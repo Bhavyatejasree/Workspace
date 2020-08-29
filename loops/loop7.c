@@ -1,4 +1,8 @@
+
+/* Print triangle in reverse */
+
 #include<stdio.h>
+
 void main()
 {
 	int i=1;

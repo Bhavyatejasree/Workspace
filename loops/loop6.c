@@ -1,4 +1,8 @@
+
+/* Print a triangle */
+
 #include<stdio.h>
+
 void main()
 {
 	int i=1;
@@ -8,14 +12,12 @@ void main()
 	while(i<=a)
 	{
 		j=1;
+		while(j<=i)
 		{
-			while(j<=i)
-			{
 			printf("*");
 			j++;
-			}
+		}
 		i++;
 		printf("\n");
-		}
 	}
 }

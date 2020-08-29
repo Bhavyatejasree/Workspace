@@ -1,10 +1,18 @@
+
+/* fibanocci series */
+
 #include<stdio.h>
+
 void main()
 {
-	int a=1,b=1,i=1,n,c;
+	int a=0,b=1,i=1,n,c = 0;
+
 	printf("enter limit:");
-	scanf("%d\n",&n);
-	while(i<=n)
+	scanf("%d",&n);
+
+	printf("fibanocci series: \n");
+
+	while (c < n)
 	{
 		c=a+b;
 		printf("%d,",c);
@@ -12,4 +20,5 @@ void main()
 		b=c;
 		i++;
 	}
+	printf("\n");
 }
