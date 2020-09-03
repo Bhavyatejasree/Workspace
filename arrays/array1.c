@@ -9,10 +9,10 @@ void main()
 	printf("enter array elements:\n");
 	
 	while (i < 10)
-	  {
+	{
   		scanf("%d",&a[i]);
 		i++;
-	  }
+	}
 	
 	i = 0;
  	

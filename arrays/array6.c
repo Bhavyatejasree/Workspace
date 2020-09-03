@@ -18,14 +18,14 @@ void main()
 	while(i < 10)
 	{ 
 		if(a[i]%2 == 0)
-		 {
-		   count++;
-		 }
-	  i++;
+		{
+			count++;
+		}
+		i++;
 	}
 
 	printf("Array has %d even numbers",count);
 
 }
 
-	
+
