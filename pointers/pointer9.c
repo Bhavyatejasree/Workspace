@@ -19,28 +19,28 @@ void main()
 	}
 
 	p = &a[0];
-	while(*p < *q)
+	q = &a[9];
+
+	while(p < &a[10])
 	{
-		q = &a[10];
-		while(*p < *q)
+		while(q >= &a[0])
 		{
-			if(p < q)
-			{	
-				*p = temp;
-				*p  = *q;
-				temp = *q;
+			if(*p < *q)
+			{
+				temp = *p;
+				*p = *q;
+				*q = temp;	
 			}
-	           q--;
-		}
+		   q--;
+		 }
 	    p++;
 	 }
 
 	printf("array elements are:\n");
 
 	p = &a[0];
-	q = &a[10];
 
-	while(p < q)
+	while(p < &a[10])
 	{
 		printf("%d-", *p);
 		p++;
