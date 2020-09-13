@@ -19,11 +19,11 @@ void main()
 	}
 
 	p = &a[0];
-	q = &a[9];
 
 	while(p < &a[10])
 	{
-		while(q >= &a[0])
+		q = p+1;
+		while(q < &a[10])
 		{
 			if(*p < *q)
 			{
@@ -31,7 +31,7 @@ void main()
 				*p = *q;
 				*q = temp;	
 			}
-		   q--;
+		   q++;
 		 }
 	    p++;
 	 }
