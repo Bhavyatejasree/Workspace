@@ -1,8 +1,6 @@
 
 
 #include <stdio.h>
-#include <string.h>
-
 
 char reoccur(char*, char);
 
@@ -18,7 +16,7 @@ void main()
 
 	printf("enter character:");
 
-	scanf("%s", &b);
+	scanf("%c", &b);
 
 	res = reoccur(a,b); 
 
@@ -28,11 +26,11 @@ void main()
 char reoccur(char* m, char n)
 {
 	int i = 0;
-	int res;
+	int res = 0;
 
 	while(m[i] != '\0')
 	{
-		if(m[i] == 'n')
+		if(m[i] == n)
 		{
 			res++;
 		}

@@ -8,7 +8,7 @@ char is_upper(char* );
 
 void main()
 {
-	char ch[20] = "hello world";
+	char ch[30] = "Hi....How are you?";
 	
 	is_lower(ch);
 	printf("lower case: %s\n", ch);
@@ -23,7 +23,7 @@ char is_upper(char* a )
 	
 	while(a[i] !='\0')
 	{
-		if(a[i] >= 'a' && a[i] <='z' && a[i] == 32)
+		if((a[i] >= 'a') && (a[i] <='z'))
 		{
 			a[i] = a[i] -  32;
 
@@ -31,9 +31,6 @@ char is_upper(char* a )
 		
 		i++;
 	}
-
-	return a;
-
 }
 
 char is_lower(char* b)
@@ -42,7 +39,7 @@ char is_lower(char* b)
 
 	while(b[i] != '\0')
 	{
-		if(b[i] <= 'A' && b[i] >= 'Z' && b[i] == 32)
+		if((b[i] >= 'A') && (b[i] <= 'Z'))
 		{
 			b[i] = b[i] + 32;
 
@@ -50,6 +47,4 @@ char is_lower(char* b)
 
 		i++;
 	}
-
-	return b;
 }
