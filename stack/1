@@ -1,0 +1,40 @@
+// stack 
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node{
+	int data;
+	struct node *link;
+};
+
+
+struct node push(struct node*, int);
+
+
+void main()
+{
+	struct node *p = NULL;
+	p = push(p ,10);
+	p = push(p, 20);
+	p = push(p, 30);
+	p = push(p, 40);
+	p = push(p, 50);
+}
+
+struct node *push(struct node *a, int b)
+{
+	struct node* new = malloc(sizeof(struct node));
+
+	if(new == 0)
+	{
+		printf("list is empty");
+	}
+
+		new->data = b,
+		new->link = *a;
+	 
+	new = *a;
+	return new;
+}
